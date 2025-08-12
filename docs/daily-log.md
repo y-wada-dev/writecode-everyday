@@ -16,3 +16,6 @@
 | 2025-08-11 | csv processing | python/20250811_csv/read_csv.py | python |
 | 2025-08-11 | csv processing | python/20250811_csv/sample.csv |  |
 | 2025-08-11 | csv processing | python/20250811_csv/write_csv.py | python |
+| 2025-08-12 | api practice | python/20250812_api/api_data.csv |  |
+| 2025-08-12 | api practice | python/20250812_api/api_get.py | python |
+| 2025-08-12 | api practice | python/20250812_api/api_post.py | python |
