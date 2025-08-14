@@ -28,3 +28,4 @@
 | 2025-08-13 | csv module | python/20250813_csv/csv_module.py | python |
 | 2025-08-13 | csv module | python/20250813_csv/output.csv |  |
 | 2025-08-13 | csv module | python/20250813_csv/sample.csv |  |
+| 2025-08-14 | class | python/20250814_class/car_class.py | python |
