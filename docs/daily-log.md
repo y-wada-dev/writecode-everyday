@@ -35,3 +35,6 @@
 | 2025-08-15 | file handling | python/20250815_file_handling/sample.text |  |
 | 2025-08-16 | max heap | python/20250816_node_tree/heap_algorithms.py | python |
 | 2025-08-16 | README修正（テストコミット） | README.md |  |
+| 2025-08-16 | Intermediate Scan | python/20250816_node_tree/heap_algorithms.py | python |
+| 2025-08-16 | Intermediate Scan | python/20250816_tree_algorithms/heap_algorithms.py | python |
+| 2025-08-16 | Intermediate Scan | python/20250816_tree_algorithms/scanning_the_two_trees.py | python |
