@@ -29,3 +29,7 @@
 | 2025-08-13 | csv module | python/20250813_csv/output.csv |  |
 | 2025-08-13 | csv module | python/20250813_csv/sample.csv |  |
 | 2025-08-14 | class | python/20250814_class/car_class.py | python |
+| 2025-08-15 | file handling | python/20250815_file_handling/20250815_file_backup/sample.txt |  |
+| 2025-08-15 | file handling | python/20250815_file_handling/20250815_file_backup/sample_1.txt |  |
+| 2025-08-15 | file handling | python/20250815_file_handling/file_handling.py | python |
+| 2025-08-15 | file handling | python/20250815_file_handling/sample.text |  |
