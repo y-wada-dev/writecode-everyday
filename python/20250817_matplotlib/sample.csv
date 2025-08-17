@@ -1,0 +1,13 @@
+date,store,item,sales
+2025-01-05,A,apple,100
+2025-01-10,A,banana,120
+2025-01-15,B,apple,90
+2025-01-20,B,banana,150
+2025-02-03,A,apple,200
+2025-02-12,A,banana,180
+2025-02-18,B,apple,160
+2025-02-25,B,banana,140
+2025-03-02,A,apple,220
+2025-03-08,A,banana,210
+2025-03-15,B,apple,170
+2025-03-22,B,banana,190
