@@ -43,3 +43,4 @@
 | 2025-08-17 | montly sum | python/20250817_matplotlib/chart02.py | python |
 | 2025-08-17 | montly sum | python/20250817_matplotlib/chart03.py | python |
 | 2025-08-17 | group chart | python/20250817_matplotlib/chart04.py | python |
+| 2025-08-17 | Monthly Sales Comparison | python/20250817_matplotlib/chart05.py | python |
