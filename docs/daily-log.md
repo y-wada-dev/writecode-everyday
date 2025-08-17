@@ -39,3 +39,6 @@
 | 2025-08-16 | Intermediate Scan | python/20250816_tree_algorithms/heap_algorithms.py | python |
 | 2025-08-16 | Intermediate Scan | python/20250816_tree_algorithms/scanning_the_two_trees.py | python |
 | 2025-08-17 | chart1 | python/20250817_matplotlib/chart.py | python |
+| 2025-08-17 | montly sum | python/20250817_matplotlib/chart.py | python |
+| 2025-08-17 | montly sum | python/20250817_matplotlib/chart02.py | python |
+| 2025-08-17 | montly sum | python/20250817_matplotlib/chart03.py | python |

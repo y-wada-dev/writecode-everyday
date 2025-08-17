@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 # sampleData 
 df = pd.DataFrame({
@@ -12,12 +13,15 @@ df = pd.DataFrame({
 df["date"] = pd.to_datetime(df["date"])
 df = df.set_index("date")
 
-# 折れ線
-plt.figure(figsize=(7, 5))
-df["sales"].plot(marker="o")
-plt.title("Daily Sales")
-plt.xlabel("Date")
-plt.ylabel("Sales")
-plt.grid(True, alpha=0.3)
+# 月別集計用の棒グラフ
+monthly = df["sales"].resample("ME").sum()
+
+monthly.index = monthly.index.strftime("%Y/%m")
+
+ax = monthly.plot(kind="bar", figsize=(6, 4))
+
+ax.set_title("Monthly Sales")
+ax.set_xlabel("Month")
+ax.set_ylabel("Sales")
 plt.tight_layout()
 plt.show()

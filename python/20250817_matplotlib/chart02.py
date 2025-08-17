@@ -12,12 +12,14 @@ df = pd.DataFrame({
 df["date"] = pd.to_datetime(df["date"])
 df = df.set_index("date")
 
-# 折れ線
-plt.figure(figsize=(7, 5))
-df["sales"].plot(marker="o")
-plt.title("Daily Sales")
+# 移動平均を含む折れ線グラフ
+plt.figure(figsize=(7, 4))
+df["sales"].plot(label="Daily", alpha=0.6)
+df["sales"].rolling(7).mean().plot(label="7-day MA", linewidth=2)
+plt.title("Daily Sales with 70day Moving Average")
 plt.xlabel("Date")
 plt.ylabel("Sales")
+plt.legend()
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
