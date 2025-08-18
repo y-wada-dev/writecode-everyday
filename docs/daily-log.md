@@ -48,3 +48,4 @@
 | 2025-08-17 | csv data plot | python/20250817_matplotlib/sample.csv |  |
 | 2025-08-18 | scatter plot | python/20250818_scatter_plot/ads_sales.csv |  |
 | 2025-08-18 | scatter plot | python/20250818_scatter_plot/scatter_plot.py | python |
+| 2025-08-18 | regression line | python/20250818_scatter_plot/regression_line.py | python |
