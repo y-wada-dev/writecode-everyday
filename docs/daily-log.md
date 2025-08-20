@@ -51,3 +51,5 @@
 | 2025-08-18 | regression line | python/20250818_scatter_plot/regression_line.py | python |
 | 2025-08-19 | error handling | python/20250819_error_handling/error_handling.py | python |
 | 2025-08-19 | error handling | python/20250819_error_handling/logs/error.log |  |
+| 2025-08-20 | json processing | python/20250820_json/json_processing.py | python |
+| 2025-08-20 | json processing | python/20250820_json/output.json |  |
