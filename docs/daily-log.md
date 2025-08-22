@@ -57,3 +57,4 @@
 | 2025-08-22 | base64 json | python/20250822_base64_json/base64_json.py | python |
 | 2025-08-22 | scatter color plot | python/20250823_scatter_plot/scatter_color_plot.py | python |
 | 2025-08-22 | pair plot | python/20250823_scatter_plot/pairplot.py | python |
+| 2025-08-22 | sklearn plot | python/20250823_scatter_plot/sklearn_plot.py | python |
