@@ -60,3 +60,4 @@
 | 2025-08-22 | sklearn plot | python/20250823_scatter_plot/sklearn_plot.py | python |
 | 2025-08-23 | regression line | python/20250823_regression_line/regression_line.py | python |
 | 2025-08-24 | time series data | python/20250824_time_series_data/time_series_data.py | python |
+| 2025-08-24 | monthly plot | python/20250824_time_series_data/time_series_data.py | python |
