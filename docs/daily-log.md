@@ -64,3 +64,4 @@
 | 2025-08-24 | moving average | python/20250824_time_series_data/time_series_data.py | python |
 | 2025-08-25 | time series yfinance | python/20250825_time_series_data02/time_series_yfinance.py | python |
 | 2025-08-26 | pie chart | python/20250826_pie_chart/pie.py | python |
+| 2025-08-27 | histgram | python/20250827_histgram/histgram.py | python |
