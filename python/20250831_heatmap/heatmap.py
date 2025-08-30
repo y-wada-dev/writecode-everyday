@@ -1,5 +1,9 @@
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.family'] = 'Hiragino Sans'
 
 np.random.seed(42)
 df = pd.DataFrame({
@@ -10,3 +14,10 @@ df = pd.DataFrame({
 })
 
 print(df.corr())
+
+corr = df.corr()
+
+plt.figure(figsize=(6, 4))
+sns.heatmap(corr, annot=True, cmap="coolwarm", vmin=-1, vmax=1)
+plt.title("各変数間の相関行列ヒートマップ")
+plt.show()
