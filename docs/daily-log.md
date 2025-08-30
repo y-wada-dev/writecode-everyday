@@ -68,3 +68,4 @@
 | 2025-08-27 | Normal Dist | python/20250827_histgram/histgram.py | python |
 | 2025-08-28 | weather | python/20250828_weather/weather_plot.py | python |
 | 2025-08-29 | weather rain | python/20250829_weather_rain/weather_rain.py | python |
+| 2025-08-30 | boxplot | python/20250830_boxplot/boxplot.py | python |
