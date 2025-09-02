@@ -76,3 +76,5 @@
 | 2025-09-01 | K-Means Clustering | python/20250901_k-means/k-means.py | python |
 | 2025-09-02 | scrape | python/20250902_scrape_books/book.csv |  |
 | 2025-09-02 | scrape | python/20250902_scrape_books/scrape_books.py | python |
+| 2025-09-03 | sqlite mini | python/20250903_sqlite_min/mini.db |  |
+| 2025-09-03 | sqlite mini | python/20250903_sqlite_min/sqlite_min.py | python |
