@@ -78,3 +78,4 @@
 | 2025-09-02 | scrape | python/20250902_scrape_books/scrape_books.py | python |
 | 2025-09-03 | sqlite mini | python/20250903_sqlite_min/mini.db |  |
 | 2025-09-03 | sqlite mini | python/20250903_sqlite_min/sqlite_min.py | python |
+| 2025-09-04 | nlp test | python/20250904_nlp/nlp_test.py | python |
