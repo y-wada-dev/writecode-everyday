@@ -80,3 +80,4 @@
 | 2025-09-03 | sqlite mini | python/20250903_sqlite_min/sqlite_min.py | python |
 | 2025-09-04 | nlp test | python/20250904_nlp/nlp_test.py | python |
 | 2025-09-05 | nlp jan | python/20250905_nlp_jan/nlp_jan.py | python |
+| 2025-09-06 | nlp pos neg | python/20250906_nlp_posinega/nlp_posinega.py | python |
