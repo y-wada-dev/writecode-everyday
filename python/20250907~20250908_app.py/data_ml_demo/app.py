@@ -35,3 +35,20 @@ def download_link_from_df(df: pd.DataFrame, filename: str = "data.csv", label: s
     href = f'<a href="data:file/csv;base64,{b64}" download="{filename}">{label}</a>'
     st.markdown(href, unsafe_allow_html=True)
 
+def to_pairplot_like(df: pd.DataFrame, cols: list[str]):
+    """"簡易pairplotを作成する"""
+    n = len(cols)
+    fig, axes = plt.subplots(n, n, figsize=(3*n, 3*n))
+    for i, cj in enumerate(cols):
+        for j, cj in enumerate(cols):
+            ax = axes[i, j]
+            if i == j:
+                ax.hist(df[ci].dropna(),bins=15)
+            else:
+                ax.scatter(df[cj]. df[ci], s=10, alpha=0.7)
+            if i == n-1:
+                sx.set_xlabel(cj)
+            if j == 0:
+                sx.set_ylabel(ci)
+    plt.tight_layout()
+    return fig

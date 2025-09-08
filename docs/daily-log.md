@@ -88,3 +88,4 @@
 | 2025-09-08 | download_link_from_df | python/20250907~20250908_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-08 | download_link_from_df | python/20250907~_app.py/data_ml_demo/app.py | python |
 | 2025-09-08 | download_link_from_df | python/20250907~_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-08 | to_pairplot_like | python/20250907~20250908_app.py/data_ml_demo/app.py | python |
