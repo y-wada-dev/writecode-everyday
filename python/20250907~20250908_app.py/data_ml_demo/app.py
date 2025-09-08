@@ -28,3 +28,10 @@ def ensure_datetaime_index(df: pd.DataFrame, col: str) -> pd.DataFrame:
     d = d.set_index(col).sort_index()
     return d
 
+def download_link_from_df(df: pd.DataFrame, filename: str = "data.csv", label: str = "CSVをダウンロード"):
+    """データフレームをCSVとしてダウンロードするためのリンクを生成する"""
+    csv = df.to_csv(index=False).encode("utf-8-sig")
+    b64 = base64.b64encode(csv).decode()
+    href = f'<a href="data:file/csv;base64,{b64}" download="{filename}">{label}</a>'
+    st.markdown(href, unsafe_allow_html=True)
+
