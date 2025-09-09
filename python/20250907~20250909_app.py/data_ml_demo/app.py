@@ -39,16 +39,31 @@ def to_pairplot_like(df: pd.DataFrame, cols: list[str]):
     """"簡易pairplotを作成する"""
     n = len(cols)
     fig, axes = plt.subplots(n, n, figsize=(3*n, 3*n))
-    for i, cj in enumerate(cols):
+    for i, ci in enumerate(cols):
         for j, cj in enumerate(cols):
             ax = axes[i, j]
             if i == j:
                 ax.hist(df[ci].dropna(),bins=15)
             else:
-                ax.scatter(df[cj]. df[ci], s=10, alpha=0.7)
+                ax.scatter(df[cj].dropna(), df[ci].dropna(), s=10, alpha=0.7)
             if i == n-1:
-                sx.set_xlabel(cj)
+                ax.set_xlabel(cj)
             if j == 0:
-                sx.set_ylabel(ci)
+                ax.set_ylabel(ci)
     plt.tight_layout()
     return fig
+
+# ====== sidebar ======
+st.sidebar.header("機能を選択")
+page = st = st.sidebar.radio(
+    "Select",
+    [
+        "CSVアップロードと表示",
+        "時系列(CSV)",
+        "散布図 & 簡易回帰",
+        "分布図可視化(ヒストグラム/箱ひげ)",
+        "相関ヒートマップ",
+        "簡易感情分析(辞書ベース)"
+    ]
+)
+
