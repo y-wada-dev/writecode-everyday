@@ -58,12 +58,50 @@ st.sidebar.header("機能を選択")
 page = st = st.sidebar.radio(
     "Select",
     [
-        "CSVアップロードと表示",
-        "時系列(CSV)",
-        "散布図 & 簡易回帰",
-        "分布図可視化(ヒストグラム/箱ひげ)",
-        "相関ヒートマップ",
-        "簡易感情分析(辞書ベース)"
+        "1) CSVアップロードと表示",
+        "2) 時系列(CSV)",
+        "3) 散布図 & 簡易回帰",
+        "4) 分布図可視化(ヒストグラム/箱ひげ)",
+        "5) 相関ヒートマップ",
+        "6) 簡易感情分析(辞書ベース)"
     ]
 )
 
+# ====== CSVアップロードと表示 ======
+if page.startswith("1)"):
+    st.subheader("CSVアップロード表示")
+    st.write("任意のCSVをアップロードして、列を選んでグラフ化できます。")
+
+    file = st.file_uploader("CSVファイルを選択", type=["csv"])
+    if file is not None:
+        df = pd.read_csv(file)
+        st.write("データプレビュー")
+        st.dataframe(df.head())
+
+        cols = df.columns.toloist()
+        x_col = st.selectbox("X軸", cols, index=0)
+        y_col = st.selectbox("Y軸", cols, index=min(1, len(cols)-1))
+        kind = st.selectbox("種類", ["line", "scatter", "bar"])
+
+        fig, ax = plt.subplots(figsize=(7, 4))
+        if kind == "line":
+            ax.plot(df[x_col], df[y_col])
+        elif kind == "scatter":
+            ax.scatter(df[x_col], df[y_col], s=15)
+        else:
+            ax.bar(df[x_col], df[y_col])
+        ax.set_xlabel(x_col); ax.set_ylabel(y_col); ax.grid(True, alpha=0.3)
+        st.pyplot(fig)
+
+        # ダウンロード
+        download_link_from_df(df, filename="uploaded.csv", label="このCSVデータを保存")
+    else:
+        st.info("サンプルデータを使用します。")
+        df = pd.DataFrame({
+            "x": np.arange(30),
+            "y": np.random.randint(50, 150, 30)
+        })
+        st.dataframe(df.head())
+        fig, ax = plt.subplots(figsize=(7, 4))
+        ax.plot(df["x"], df["y"], ax.grid(True, alpha=0.3))
+        st.pyplot(fig)

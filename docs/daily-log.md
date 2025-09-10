@@ -93,3 +93,7 @@
 | 2025-09-09 | sidebar | python/20250907~20250908_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-09 | sidebar | python/20250907~20250909_app.py/data_ml_demo/app.py | python |
 | 2025-09-09 | sidebar | python/20250907~20250909_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-10 | csv uploader | python/20250907~20250909_app.py/data_ml_demo/app.py | python |
+| 2025-09-10 | csv uploader | python/20250907~20250909_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-10 | csv uploader | python/20250907~20250910_app.py/data_ml_demo/app.py | python |
+| 2025-09-10 | csv uploader | python/20250907~20250910_app.py/data_ml_demo/requirements.txt |  |
