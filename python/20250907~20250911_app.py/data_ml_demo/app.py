@@ -105,3 +105,14 @@ if page.startswith("1)"):
         fig, ax = plt.subplots(figsize=(7, 4))
         ax.plot(df["x"], df["y"], ax.grid(True, alpha=0.3))
         st.pyplot(fig)
+
+
+# ====== 2) 時系列(CSV) ======
+elif page.startswith("2)"):
+    st.subheader("時系列（CSV）")
+    st.write("日付列を指定してインデックス化 → 折れ線・移動平均・月次集計")
+
+    file = st.file_uploader("CSVを選択（例：date, value)", type=["csv"])
+    date_col = st.text_input("日時列名（例：date）", value="date")
+    val_col = st.text_input("値列名（例：value/ sales)", value="value")
+    ma_window = st.slider("移動平均の窓" 3, 60, 7)
