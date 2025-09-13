@@ -147,3 +147,22 @@ elif page.startswith("2)"):
 
     except Exception as e:
         st.exception(e)
+
+# ====== 3) 散布図 & 簡易回帰 ======
+elif page.startswith("3)"):
+    st.subheader("散布図 & 簡易回帰")
+    st.write("XとYを選んで、学習→予測→R2を表示します")
+
+    file = st.file_uploader("CSVを選択（例：customer, sales, ad_spend）", type=["csv"])
+    if file is not None:
+        df = pd.read_csv(file)
+    else:
+        st.info("サンプルデータを使用中")
+        rng = np.random.default_rng(42)
+        df = pd.DataFrame({
+            "customer": rng.integers(20, 300, 80),
+            "ad_spend": rng.integers(50, 500, 80),
+        })
+        #　真の関係： sales = 0.6*customers + 1.5*ad_spend + ノイズ
+        df["sales"] = 0.6 * df["customer"] + 1.5 * df["ad_spend"] + rng.normal(0, 10, 80)
+    
