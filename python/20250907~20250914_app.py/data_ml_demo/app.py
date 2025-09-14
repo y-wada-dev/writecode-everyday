@@ -166,3 +166,7 @@ elif page.startswith("3)"):
         #　真の関係： sales = 0.6*customers + 1.5*ad_spend + ノイズ
         df["sales"] = 0.6 * df["customer"] + 1.5 * df["ad_spend"] + rng.normal(0, 10, 80)
     
+    st.dataframe(df.head())
+    cols = df.columns.tolist()
+    x_col = st.multiselect("説明変数X", cols, default=[c for c in cols if c != "sales"])
+    y_col = st.selectbox("目的変数Y", cols, index=cols.index("sales") if "sales" in cols else 0)
