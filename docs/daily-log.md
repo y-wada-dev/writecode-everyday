@@ -113,3 +113,7 @@
 | 2025-09-14 | "散布図 & 簡易回帰" | python/20250907~20250913_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-14 | "散布図 & 簡易回帰" | python/20250907~20250914_app.py/data_ml_demo/app.py | python |
 | 2025-09-14 | "散布図 & 簡易回帰" | python/20250907~20250914_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-15 | LinearRegression | python/20250907~20250914_app.py/data_ml_demo/app.py | python |
+| 2025-09-15 | LinearRegression | python/20250907~20250914_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-15 | LinearRegression | python/20250907~20250915_app.py/data_ml_demo/app.py | python |
+| 2025-09-15 | LinearRegression | python/20250907~20250915_app.py/data_ml_demo/requirements.txt |  |

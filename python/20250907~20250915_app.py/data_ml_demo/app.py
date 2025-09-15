@@ -170,3 +170,15 @@ elif page.startswith("3)"):
     cols = df.columns.tolist()
     x_col = st.multiselect("説明変数X", cols, default=[c for c in cols if c != "sales"])
     y_col = st.selectbox("目的変数Y", cols, index=cols.index("sales") if "sales" in cols else 0)
+
+    if x_col and y_col:
+        X = df[x_col].values
+        y = df[y_col].values
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+        model = LinearRegression()
+        r2_train = model.score(X_train, y_train)
+        r2_test = model.score(X_test, y_test)
+
+        st.write(f"※*係数**: {dict(zip(x_col, model.coef_.round(3)))}) | **切片**：{model.intercept_:.3f}")
+        st.write(f"**R2 (train)**: {r2_train:.3f} | **R2 (test)**: {r2_test:.3f}")
+        
