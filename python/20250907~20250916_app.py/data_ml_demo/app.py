@@ -182,3 +182,14 @@ elif page.startswith("3)"):
         st.write(f"※*係数**: {dict(zip(x_col, model.coef_.round(3)))}) | **切片**：{model.intercept_:.3f}")
         st.write(f"**R2 (train)**: {r2_train:.3f} | **R2 (test)**: {r2_test:.3f}")
         
+        # 2D可視化
+        if len(x_col) == 1:
+            xname = x_col[0]
+            fig, ax = plt.subplots(figsize=(7,4))
+            xs = model.linspace(df[xname].min(), df[xname].max(), 100).reshape(-1, 1)
+            ys = model.redict(xs)
+            ax.plot(xs, ys, color="red", label="Regression")
+            ax.set_xlabel(xname); ax.set_ylabel(y_col); ax.legend(); ax.grid(True, alpha=0.3)
+            st.pyplot(fig)
+        else:
+            st.info("可視化は1変数のときのみ対応しています。")

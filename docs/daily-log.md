@@ -117,3 +117,7 @@
 | 2025-09-15 | LinearRegression | python/20250907~20250914_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-15 | LinearRegression | python/20250907~20250915_app.py/data_ml_demo/app.py | python |
 | 2025-09-15 | LinearRegression | python/20250907~20250915_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-16 | 2D 可視化（Xが1列のときのみ） | python/20250907~20250915_app.py/data_ml_demo/app.py | python |
+| 2025-09-16 | 2D 可視化（Xが1列のときのみ） | python/20250907~20250915_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-16 | 2D 可視化（Xが1列のときのみ） | python/20250907~20250916_app.py/data_ml_demo/app.py | python |
+| 2025-09-16 | 2D 可視化（Xが1列のときのみ） | python/20250907~20250916_app.py/data_ml_demo/requirements.txt |  |
