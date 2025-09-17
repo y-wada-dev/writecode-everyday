@@ -193,3 +193,33 @@ elif page.startswith("3)"):
             st.pyplot(fig)
         else:
             st.info("可視化は1変数のときのみ対応しています。")
+
+# ====== 4) 分布図可視化(ヒストグラム/箱ひげ) ======
+elif page.startswith("4)"):
+    st.subheader("分布図可視化(ヒストグラム/箱ひげ)")        
+    file = st.file_uploader("CSVを選択", type=["csv"])
+    if file is not None:
+        df = pd.read_csv(file)
+    else:
+        st.info("サンプルデータを使用中")
+        df = pd.DataFrame({
+            "A": np.random.normal(100, 15, 200),
+            "B": np.random.normal(80, 20, 200),
+            "C": np.random.normal(120, 10, 200)
+        })
+    
+    col = st.selectbox("列を選択", df.columns.tolist())
+    bins = st.slider("bins", 5, 60, 20)
+    fig, ax = plt.subplots(figsize=(7, 3.6))
+    ax.hist(df[col].dropna(), bins=bins, edgecolor="black", alpha=0.7)
+    ax.set_title(f"Histgram; {col}"); ax.grid(True, alpha=0.2)
+    st.pyplot(fig)
+
+    st.markdown("---")
+    st.write("箱ひげ図")
+    cols = st.multiselect("列を選択", df.columns.tolist(), default=df.columns.tolist()[:3])
+    if cols:
+        fig2, ax2 = plt.subplots(figsize=(7, 3.6))
+        ax2.boxplot([df[c].dropna()for c in cols], label=cols, showfliers=True)
+        ax2.set_title("Boxplot")
+        st.pyplot(fig2)
