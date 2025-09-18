@@ -125,3 +125,7 @@
 | 2025-09-17 | "分布図可視化(ヒストグラム/箱ひげ)" | python/20250907~20250916_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-17 | "分布図可視化(ヒストグラム/箱ひげ)" | python/20250907~20250917_app.py/data_ml_demo/app.py | python |
 | 2025-09-17 | "分布図可視化(ヒストグラム/箱ひげ)" | python/20250907~20250917_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-18 | heatmap | python/20250907~20250917_app.py/data_ml_demo/app.py | python |
+| 2025-09-18 | heatmap | python/20250907~20250917_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-18 | heatmap | python/20250907~20250918_app.py/data_ml_demo/app.py | python |
+| 2025-09-18 | heatmap | python/20250907~20250918_app.py/data_ml_demo/requirements.txt |  |

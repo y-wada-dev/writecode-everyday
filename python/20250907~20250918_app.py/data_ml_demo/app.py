@@ -223,3 +223,26 @@ elif page.startswith("4)"):
         ax2.boxplot([df[c].dropna()for c in cols], label=cols, showfliers=True)
         ax2.set_title("Boxplot")
         st.pyplot(fig2)
+
+# ====== 5) 相関ヒートマップ ======
+elif page.startswith("5)"):
+    st.subheader("相関ヒートマップ")
+    file = st,.file_uploader("CSVを選択", type=["csv"])
+    if file is not None:
+        df = pd.read_csv(file)
+    else:
+        st.info("サンプルデータを使用中")
+        df = pd.DataFrame({
+            "sales": np.random.normal(100, 20, 120),
+            "customers": np.random.normal(200, 30, 120),
+            "ad_spend": np.random.normal(60, 10, 120),
+            "score": np.random.normal(3.5, 0.5, 120),
+        })
+
+    num_cols = df.select_dtypes(include=np.number).columnus.tolist()
+    if not num_cols:
+        st.error("数値列が見つかりません。")
+    else:
+        corr = df[num_cols].corr()
+        st.dataframe(corr.style.background_gradient(cmap="coolwarm"), vmin=-1, vmax=1).format("{:.2f}")
+        st.caption("セルの色：赤が正の相関、青が負の相関を示します。")
