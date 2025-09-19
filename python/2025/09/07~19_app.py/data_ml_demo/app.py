@@ -227,7 +227,7 @@ elif page.startswith("4)"):
 # ====== 5) 相関ヒートマップ ======
 elif page.startswith("5)"):
     st.subheader("相関ヒートマップ")
-    file = st,.file_uploader("CSVを選択", type=["csv"])
+    file = st.file_uploader("CSVを選択", type=["csv"])
     if file is not None:
         df = pd.read_csv(file)
     else:
@@ -246,3 +246,37 @@ elif page.startswith("5)"):
         corr = df[num_cols].corr()
         st.dataframe(corr.style.background_gradient(cmap="coolwarm"), vmin=-1, vmax=1).format("{:.2f}")
         st.caption("セルの色：赤が正の相関、青が負の相関を示します。")
+
+# ===== 6) 簡易感情分析(辞書ベース) ======
+elif page.startswith("6)"):
+    st.subheader("簡易感情分析(辞書ベース)")
+    st.wite("英語のシンプルなテキストを対象に、ポジティブ/ネガティブ単語の出現頻度をカウントします。")
+
+    defalut_texts = [
+        "I love this product. It is amazing and works great!",
+        "This is the worst service I have ever experienced.",
+        "The quality is okay, but could be better.",
+        "Absolutely fantastic! Highly recommend to everyone.",
+        "I am very disappointed with my purchase."
+    ]
+    txt = st.text_area("テキスト（複数行OK）", value="\n".join(defalut_texts), height=150)
+
+    positive_words = {"love", "amazing", "great", "fantastic", "excellent", "good", "happy", "recommend", "satisfied", "wonderful"}
+    negative_words = {"worst", "disappointed", "bad", "terrible", "awful", "hate", "poor", "sad", "angry", "frustrated"}
+
+    def analyze_sentiment(line: str):
+        words = [w.strip(".,!?;:()[]\"'").lower() for w in line.split()]
+        pos = sum(1for w in words if w in positive_words)
+        neg = sum(1for w in words if w in negative_words)
+        score = pos - neg
+        if score > 0: label = "Positive"
+        elif score < 0: label = "Negative"
+        else: label = "Neutral"
+        return {"text": line, "pos":pos, "neg":neg, "score": score, "label": label}
+    
+    if st.button("判定する"):
+        lines = [l for l in txt.splitlines() if l.strip()]
+        results = [analyze_sentiment(l) for l in lines]
+        out =pd.DataFrame(results, columns=["text", "pos", "neg", "score", "label"])
+        st.dataframe(out)
+        download_link_from_df(out, filename="sentiment_analysis.csv", label="結果をCSVでダウンロード")
