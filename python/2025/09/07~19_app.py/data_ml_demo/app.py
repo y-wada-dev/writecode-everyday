@@ -177,6 +177,8 @@ elif page.startswith("3)"):
         y = df[y_col].values
         X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
         model = LinearRegression()
+
+        model.fit(X_train, y_train)
         r2_train = model.score(X_train, y_train)
         r2_test = model.score(X_test, y_test)
 
@@ -245,7 +247,7 @@ elif page.startswith("5)"):
         st.error("数値列が見つかりません。")
     else:
         corr = df[num_cols].corr()
-        st.dataframe(corr.style.background_gradient(cmap="coolwarm"), vmin=-1, vmax=1).format("{:.2f}")
+        st.dataframe(corr.style.background_gradient(vmin=0, vmax=1).format("{:.2f}"))
         st.caption("セルの色：赤が正の相関、青が負の相関を示します。")
 
 # ===== 6) 簡易感情分析(辞書ベース) ======
