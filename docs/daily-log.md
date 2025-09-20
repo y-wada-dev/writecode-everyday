@@ -258,3 +258,4 @@
 | 2025-09-20 | ディレクトリ名修正 | python/2025/09/07~19_app.py/data_ml_demo/requirements.txt |  |
 | 2025-09-20 | ディレクトリ名修正 | python/2025/09/07~20_app.py/data_ml_demo/app.py | python |
 | 2025-09-20 | ディレクトリ名修正 | python/2025/09/07~20_app.py/data_ml_demo/requirements.txt |  |
+| 2025-09-21 | list sum ave | python/2025/09/21_list_sum_ave/list_sum_ave_py |  |
