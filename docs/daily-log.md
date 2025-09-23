@@ -261,3 +261,4 @@
 | 2025-09-21 | list sum ave | python/2025/09/21_list_sum_ave/list_sum_ave_py |  |
 | 2025-09-22 | text reverse | python/2025/09/22_text_r/text_r.py | python |
 | 2025-09-23 | even num | python/2025/09/23_even_num/even_num.py | python |
+| 2025-09-24 | count in dic | python/2025/09/24_count_in_dic/count_in_dic.py | python |
