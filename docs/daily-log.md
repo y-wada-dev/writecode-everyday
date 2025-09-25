@@ -262,3 +262,4 @@
 | 2025-09-22 | text reverse | python/2025/09/22_text_r/text_r.py | python |
 | 2025-09-23 | even num | python/2025/09/23_even_num/even_num.py | python |
 | 2025-09-24 | count in dic | python/2025/09/24_count_in_dic/count_in_dic.py | python |
+| 2025-09-25 | scraping create httphelper | python/2025/09/25_scraping/scrape_books.py | python |
