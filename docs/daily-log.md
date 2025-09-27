@@ -267,3 +267,5 @@
 | 2025-09-26 | ディレクトリ名変更 | python/2025/09/25_scraping/scrape_books.py | python |
 | 2025-09-27 | 詳細ページ | python/2025/09/25,26_scraping/scrape_books.py | python |
 | 2025-09-27 | 詳細ページ | python/2025/09/25~27_scraping/scrape_books.py | python |
+| 2025-09-28 | all page crawl | python/2025/09/25~27_scraping/scrape_books.py | python |
+| 2025-09-28 | all page crawl | python/2025/09/25~28_scraping/scrape_books.py | python |

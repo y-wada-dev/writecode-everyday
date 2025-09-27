@@ -28,7 +28,7 @@ RATING_MAP = {
 }
 
 # --HTTP ヘルパ（リトライ付き）
-def fetch_url(url:str, session: requests.Session, max_retry=3, backoff=1.5) -> str:
+def fetch_html(url:str, session: requests.Session, max_retry=3, backoff=1.5) -> str:
     for i in range(max_retry):
         try:
             r = session.get(url, headers=HEADERS, timeout=15)
@@ -76,3 +76,19 @@ def parse_list_page(html: str, page_url: str):
     return items, next_url
 
 # 全ページを巡回してデータ収集
+def crawl_category(start_url: str, delay_sec=1.0, max_pages=100):
+    all_rows = []
+    url = start_url
+    with requests.Session() as sess:
+        pages = 0
+        while url and pages < max_pages:
+            html = fetch_html(url, sess)
+            rows, next_url = parse_list_page(html, url)
+            all_rows.extend(rows)
+            pages += 1
+            print(f"[OK] {url} -> {len(rows)}件 (累計{len(all_rows)}件)")
+            url = next_url
+            time.sleep(delay_sec)
+    return all_rows
+
+# ---保存（CSV / SQLite）
