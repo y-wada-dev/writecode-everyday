@@ -59,3 +59,20 @@ def parse_list_page(html: str, page_url: str):
                 if c in RATING_MAP:
                     rating = RATING_MAP[c]
         
+        # 詳細ページURL
+        rel = art.h3.a.get("href", "")
+        product_url = urljoin(page_url, rel)
+
+        items.append({
+            "title": title,
+            "price_gbp": price,
+            "rating": rating,
+            "stock_text": stock,
+            "product_url": product_url
+        })
+
+    next_link = soup.select_one("li.next > a")
+    next_url = urljoin(page_url, next_link["href"]) if next_link else None
+    return items, next_url
+
+# 全ページを巡回してデータ収集
