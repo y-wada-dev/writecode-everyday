@@ -92,3 +92,17 @@ def crawl_category(start_url: str, delay_sec=1.0, max_pages=100):
     return all_rows
 
 # ---保存（CSV / SQLite）
+def save_output(rows):
+    df = pd.DataFrame(rows)
+    if not df.empty:
+        df.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
+        print(f"[OK] Saved CSV: {OUT_CSV}")
+
+        with sqlite3.connect(OUT_DB) as conn:
+            df.to_sql("books", conn, if_exists="replace", index=False)
+            print(f"[OK] Saved DB: {OUT_DB}")
+    else:
+        print("[WARN] 取得&保存するデータがありません。")
+    return df
+
+# ---main

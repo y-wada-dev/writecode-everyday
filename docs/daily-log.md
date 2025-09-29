@@ -269,3 +269,5 @@
 | 2025-09-27 | 詳細ページ | python/2025/09/25~27_scraping/scrape_books.py | python |
 | 2025-09-28 | all page crawl | python/2025/09/25~27_scraping/scrape_books.py | python |
 | 2025-09-28 | all page crawl | python/2025/09/25~28_scraping/scrape_books.py | python |
+| 2025-09-29 | save csv SQLite | python/2025/09/25~28_scraping/scrape_books.py | python |
+| 2025-09-29 | save csv SQLite | python/2025/09/25~29_scraping/scrape_books.py | python |
