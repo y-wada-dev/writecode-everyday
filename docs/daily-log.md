@@ -271,3 +271,7 @@
 | 2025-09-28 | all page crawl | python/2025/09/25~28_scraping/scrape_books.py | python |
 | 2025-09-29 | save csv SQLite | python/2025/09/25~28_scraping/scrape_books.py | python |
 | 2025-09-29 | save csv SQLite | python/2025/09/25~29_scraping/scrape_books.py | python |
+| 2025-09-30 | scraping | python/2025/09/25~29_scraping/scrape_books.py | python |
+| 2025-09-30 | scraping | python/2025/09/25~30_scraping/books.db |  |
+| 2025-09-30 | scraping | python/2025/09/25~30_scraping/books_scraped.csv |  |
+| 2025-09-30 | scraping | python/2025/09/25~30_scraping/scrape_books.py | python |

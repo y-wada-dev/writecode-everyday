@@ -63,6 +63,9 @@ def parse_list_page(html: str, page_url: str):
         rel = art.h3.a.get("href", "")
         product_url = urljoin(page_url, rel)
 
+        availability = art.select_one(".instock.availability")
+        stock = availability.get_text(strip=True) if availability else ""
+
         items.append({
             "title": title,
             "price_gbp": price,
@@ -106,3 +109,15 @@ def save_output(rows):
     return df
 
 # ---main
+def main():
+    rows = crawl_category(CATEGORY_URL, delay_sec=1.0, max_pages=5)
+    df = save_output(rows)
+
+    # 簡単な分析
+    if not df.empty:
+        print(df.head(5))
+
+        print(df["price_gbp"].describe())
+
+if __name__ == "__main__":
+    main()
