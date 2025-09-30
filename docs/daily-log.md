@@ -275,3 +275,6 @@
 | 2025-09-30 | scraping | python/2025/09/25~30_scraping/books.db |  |
 | 2025-09-30 | scraping | python/2025/09/25~30_scraping/books_scraped.csv |  |
 | 2025-09-30 | scraping | python/2025/09/25~30_scraping/scrape_books.py | python |
+| 2025-10-01 | analyze sqlite | python/2025/10/01_analyze_sqlite/analyze_books_sqlite.py | python |
+| 2025-10-01 | analyze sqlite | python/2025/10/01_analyze_sqlite/books.db |  |
+| 2025-10-01 | analyze sqlite | python/2025/10/01_analyze_sqlite/books_scraped.csv |  |
