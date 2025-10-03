@@ -280,3 +280,5 @@
 | 2025-10-01 | analyze sqlite | python/2025/10/01_analyze_sqlite/books_scraped.csv |  |
 | 2025-10-01 | analyze sqlite 続き | python/2025/10/01_analyze_sqlite/analyze_books_sqlite.py | python |
 | 2025-10-02 | sampledata | python/2025/10/02_data_cleaning/data_cleaning.py | python |
+| 2025-10-03 | data clean | python/2025/10/02_data_cleaning/data_cleaning.py | python |
+| 2025-10-03 | data clean | python/2025/10/02~03_data_cleaning/data_cleaning.py | python |
