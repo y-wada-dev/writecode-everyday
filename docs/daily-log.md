@@ -282,3 +282,5 @@
 | 2025-10-02 | sampledata | python/2025/10/02_data_cleaning/data_cleaning.py | python |
 | 2025-10-03 | data clean | python/2025/10/02_data_cleaning/data_cleaning.py | python |
 | 2025-10-03 | data clean | python/2025/10/02~03_data_cleaning/data_cleaning.py | python |
+| 2025-10-04 | data clean 2 | python/2025/10/02~03_data_cleaning/data_cleaning.py | python |
+| 2025-10-04 | data clean 2 | python/2025/10/02~04_data_cleaning/data_cleaning.py | python |
