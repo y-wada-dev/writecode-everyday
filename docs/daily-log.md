@@ -285,3 +285,5 @@
 | 2025-10-04 | data clean 2 | python/2025/10/02~03_data_cleaning/data_cleaning.py | python |
 | 2025-10-04 | data clean 2 | python/2025/10/02~04_data_cleaning/data_cleaning.py | python |
 | 2025-10-05 | cleaned data plot | python/2025/10/05_cleaned_data_plot/cleaned_data_plot.py | python |
+| 2025-10-06 | 欠損サンプルデータ準備、読み込み | python/2025/10/06_missing_values/missing_values.py | python |
+| 2025-10-06 | 欠損サンプルデータ準備、読み込み | python/2025/10/06_missing_values/sample_missing.csv |  |
