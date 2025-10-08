@@ -31,3 +31,12 @@ print(df_mean)
 
 print("\n===前の値で補完したデータ（ffill）===")
 print(df_ffill)
+
+# 補完後の分布比較
+fig, axes = plt.subplots(1,2, figsize=(10, 4))
+sns.histplot(df["sales"], ax=axes[0], kde=True, color="red", label="Before")
+sns.histplot(df_mean["sales"], ax=axes[1], kde=True, color="green", label="After Mean")
+axes[0].set_title("Before Imputation")
+axes[1].set_title("After Mean Imputation")
+plt.tight_layout()
+plt.show()

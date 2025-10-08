@@ -295,3 +295,7 @@
 | 2025-10-08 | 欠損値補完処理 | python/2025/10/06~07_missing_values/sample_missing.csv |  |
 | 2025-10-08 | 欠損値補完処理 | python/2025/10/06~08_missing_values/missing_values.py | python |
 | 2025-10-08 | 欠損値補完処理 | python/2025/10/06~08_missing_values/sample_missing.csv |  |
+| 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~08_missing_values/missing_values.py | python |
+| 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~08_missing_values/sample_missing.csv |  |
+| 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~09_missing_values/missing_values.py | python |
+| 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~09_missing_values/sample_missing.csv |  |
