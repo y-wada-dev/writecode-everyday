@@ -19,3 +19,15 @@ plt.figure(figsize=(10, 6))
 sns.heatmap(df.isnull(), cbar=False, cmap="coolwarm", yticklabels=False)
 plt.title("欠損データのヒートマップ")
 plt.show()
+
+# 補完処理
+df_mean = df.fillna(df.mean(numeric_only=True))
+
+df_ffill = df.fillna(method='ffill')
+
+# 結果表示
+print("\n===平均値で補完したデータ===")
+print(df_mean)
+
+print("\n===前の値で補完したデータ（ffill）===")
+print(df_ffill)
