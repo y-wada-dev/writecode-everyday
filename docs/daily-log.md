@@ -299,3 +299,5 @@
 | 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~08_missing_values/sample_missing.csv |  |
 | 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~09_missing_values/missing_values.py | python |
 | 2025-10-09 | 欠損値補完、分布比較 | python/2025/10/06~09_missing_values/sample_missing.csv |  |
+| 2025-10-10 | outlier_detection  cerate sample data | python/2025/10/10_outlier_detection/outlier_detection.py | python |
+| 2025-10-10 | outlier_detection  cerate sample data | python/2025/10/10_outlier_detection/sample_outlier.csv |  |
