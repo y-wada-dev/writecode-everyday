@@ -305,3 +305,7 @@
 | 2025-10-11 | append boxplot | python/2025/10/10_outlier_detection/sample_outlier.csv |  |
 | 2025-10-11 | append boxplot | python/2025/10/10~11_outlier_detection/outlier_detection.py | python |
 | 2025-10-11 | append boxplot | python/2025/10/10~11_outlier_detection/sample_outlier.csv |  |
+| 2025-10-12 | IQR法による外れ値検出 | python/2025/10/10~11_outlier_detection/outlier_detection.py | python |
+| 2025-10-12 | IQR法による外れ値検出 | python/2025/10/10~11_outlier_detection/sample_outlier.csv |  |
+| 2025-10-12 | IQR法による外れ値検出 | python/2025/10/10~12_outlier_detection/outlier_detection.py | python |
+| 2025-10-12 | IQR法による外れ値検出 | python/2025/10/10~12_outlier_detection/sample_outlier.csv |  |
