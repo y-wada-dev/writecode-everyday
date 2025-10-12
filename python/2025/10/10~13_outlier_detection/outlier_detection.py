@@ -24,3 +24,20 @@ def detect_outliers_iqr(df, col):
 
 outlier_iqr = detect_outliers_iqr(df, "sales")
 print("IQR法による外れ値:\n", outlier_iqr)
+
+# Zスコア法による外れ値検出
+def detect_outliers_zscore(df, col, threshold=2.0):
+    mean = df[col].mean()
+    std = df[col].std()
+    z_scores = (df[col] - mean) / std
+    return df[np.abs(z_scores) > threshold]
+
+outliers_z = detect_outliers_zscore(df, "sales")
+print("Zスコア法による外れ値:\n", outliers_z)
+
+s = pd.to_numeric(df["sales"], errors="coerce").dropna()
+mean = s.mean()
+std  = s.std(ddof=0)  # or ddof=1
+z = (s - mean) / std
+print("mean:", mean, "std:", std)
+print(pd.DataFrame({"sales": s, "z": z}).sort_values("z"))
