@@ -56,11 +56,13 @@ write_code_everyday/
 ### 5. commit-msg フック
 コミット時に自動で日付を付与し、Daily Logに記録します
 
-コマンド例：`
+コマンド例：
+`
 git commit -m "PythonでFizzBuzz"
 `
 
-実際のコミットメッセージ：`
+実際のコミットメッセージ：
+`
 20250808_PythonでFizzBuzz
 `
 
