@@ -51,3 +51,12 @@ def remove_outliers(df, col, threshold=2.0):
 
 df_cleaned = remove_outliers(df, "sales")
 print("外れ値を除去したデータ:\n", df_cleaned)
+
+# 可視化
+fig, axes = plt.subplots(1, 2, figsize=(10, 4))
+sns.boxplot(data=df, ax=axes[0])
+axes[0].set_title("Before (with outliners)")
+sns.boxplot(data=df_cleaned, ax=axes[1])
+axes[1].set_title("After (outliners removed)")
+plt.tight_layout()
+plt.show()
