@@ -313,3 +313,7 @@
 | 2025-10-13 | zscore | python/2025/10/10~12_outlier_detection/sample_outlier.csv |  |
 | 2025-10-13 | zscore | python/2025/10/10~13_outlier_detection/outlier_detection.py | python |
 | 2025-10-13 | zscore | python/2025/10/10~13_outlier_detection/sample_outlier.csv |  |
+| 2025-10-14 | remove outliers | python/2025/10/10~13_outlier_detection/outlier_detection.py | python |
+| 2025-10-14 | remove outliers | python/2025/10/10~13_outlier_detection/sample_outlier.csv |  |
+| 2025-10-14 | remove outliers | python/2025/10/10~14_outlier_detection/outlier_detection.py | python |
+| 2025-10-14 | remove outliers | python/2025/10/10~14_outlier_detection/sample_outlier.csv |  |

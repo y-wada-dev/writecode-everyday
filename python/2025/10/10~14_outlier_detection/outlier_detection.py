@@ -41,3 +41,13 @@ std  = s.std(ddof=0)  # or ddof=1
 z = (s - mean) / std
 print("mean:", mean, "std:", std)
 print(pd.DataFrame({"sales": s, "z": z}).sort_values("z"))
+
+# 外れ値を除去したデータ
+def remove_outliers(df, col, threshold=2.0):
+    mean = df[col].mean()
+    std = df[col].std()
+    z = np.abs((df[col] - mean) / std)
+    return df[z <= threshold]
+
+df_cleaned = remove_outliers(df, "sales")
+print("外れ値を除去したデータ:\n", df_cleaned)
