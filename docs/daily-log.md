@@ -321,3 +321,5 @@
 | 2025-10-15 | 可視化（ハズレ値除去前後） | python/2025/10/10~14_outlier_detection/sample_outlier.csv |  |
 | 2025-10-15 | 可視化（ハズレ値除去前後） | python/2025/10/10~15_outlier_detection/outlier_detection.py | python |
 | 2025-10-15 | 可視化（ハズレ値除去前後） | python/2025/10/10~15_outlier_detection/sample_outlier.csv |  |
+| 2025-10-16 | read sample data | python/2025/10/16_winsorize/sample_outlier.csv |  |
+| 2025-10-16 | read sample data | python/2025/10/16_winsorize/winsorize.py | python |
