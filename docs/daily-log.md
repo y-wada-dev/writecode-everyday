@@ -332,3 +332,7 @@
 | 2025-10-18 | Winsorize（補正） | python/2025/10/16~18_winsorize/sample_outlier.csv |  |
 | 2025-10-18 | Winsorize（補正） | python/2025/10/16~18_winsorize/winsorize.py | python |
 | 2025-10-18 | import修正 | python/2025/10/16~18_winsorize/winsorize.py | python |
+| 2025-10-19 | 可視化データの外れ値処理として、ウィンザー化を実装しました。 | python/2025/10/16~18_winsorize/sample_outlier.csv |  |
+| 2025-10-19 | 可視化データの外れ値処理として、ウィンザー化を実装しました。 | python/2025/10/16~18_winsorize/winsorize.py | python |
+| 2025-10-19 | 可視化データの外れ値処理として、ウィンザー化を実装しました。 | python/2025/10/16~19_winsorize/sample_outlier.csv |  |
+| 2025-10-19 | 可視化データの外れ値処理として、ウィンザー化を実装しました。 | python/2025/10/16~19_winsorize/winsorize.py | python |

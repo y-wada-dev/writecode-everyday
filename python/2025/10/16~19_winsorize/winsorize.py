@@ -29,3 +29,17 @@ df["sales_winsor"] = sales_winsor
 
 print(f"\n[INFO] Winsorize適用 (5%):")
 print(df[["sales", "sales_winsor"]].head(10))
+
+# === 可視化 ===
+fig, axes = plt.subplots(1, 3, figsize=(12, 4))
+sns.boxplot(y=df["sales"], ax=axes[0], color="lightgray")
+axes[0].set_title("original")
+
+sns.boxplot(y=df_iqr_removed["sales"], ax=axes[1], color="lightblue")
+axes[1].set_title("After IQR removal")
+
+sns.boxplot(y=df["sales_winsor"], ax=axes[2], color="lightgreen")
+axes[2].set_title("After Winsorize")
+
+plt.tight_layout()
+plt.show()
