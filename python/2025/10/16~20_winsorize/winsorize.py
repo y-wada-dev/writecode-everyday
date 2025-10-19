@@ -43,3 +43,20 @@ axes[2].set_title("After Winsorize")
 
 plt.tight_layout()
 plt.show()
+
+# 平均・標準偏差の比較
+stats = pd.DataFrame({
+    "平均": [
+        df["sales"].mean(),
+        df_iqr_removed["sales"].mean(),
+        df["sales_winsor"].mean()
+    ],
+    "標準偏差": [
+        df["sales"].std(),
+        df_iqr_removed["sales"].std(),
+        df["sales_winsor"].std()
+    ]
+}, index=["Before", "IQR除去後", "winsorize後"])
+
+print("\n[INFO] 平均・標準偏差の比較:")
+print(stats.round(2))
