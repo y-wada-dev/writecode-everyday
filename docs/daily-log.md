@@ -341,3 +341,5 @@
 | 2025-10-20 | 平均・標準偏差の比較 | python/2025/10/16~20_winsorize/sample_outlier.csv |  |
 | 2025-10-20 | 平均・標準偏差の比較 | python/2025/10/16~20_winsorize/winsorize.py | python |
 | 2025-10-21 | tandard_scaler. | python/2025/10/21_standard_scaler/standard_scaler.py | python |
+| 2025-10-22 | 正規化（MinMaxScaler） | python/2025/10/21_standard_scaler/standard_scaler.py | python |
+| 2025-10-22 | 正規化（MinMaxScaler） | python/2025/10/21~22_standard_scaler/standard_scaler.py | python |
