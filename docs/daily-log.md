@@ -345,3 +345,4 @@
 | 2025-10-22 | 正規化（MinMaxScaler） | python/2025/10/21~22_standard_scaler/standard_scaler.py | python |
 | 2025-10-23 | 可視化 | python/2025/10/21~22_standard_scaler/standard_scaler.py | python |
 | 2025-10-23 | 可視化 | python/2025/10/21~23_standard_scaler/standard_scaler.py | python |
+| 2025-10-24 | 売上や広告費などから「効率指標」を生成 | python/2025/10/24_feature_engineering/feature_engineering.py | python |
