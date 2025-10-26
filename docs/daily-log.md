@@ -348,3 +348,5 @@
 | 2025-10-24 | 売上や広告費などから「効率指標」を生成 | python/2025/10/24_feature_engineering/feature_engineering.py | python |
 | 2025-10-25 | カテゴリ変数を数値化 | python/2025/10/24_feature_engineering/feature_engineering.py | python |
 | 2025-10-25 | カテゴリ変数を数値化 | python/2025/10/24~25_feature_engineering/feature_engineering.py | python |
+| 2025-10-26 | 日付から時間情報を抽出 | python/2025/10/24~25_feature_engineering/feature_engineering.py | python |
+| 2025-10-26 | 日付から時間情報を抽出 | python/2025/10/24~26_feature_engineering/feature_engineering.py | python |

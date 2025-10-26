@@ -20,3 +20,12 @@ df2 = pd.DataFrame({
 
 df_encoded = pd.get_dummies(df2, columns=["gender"], drop_first=True)
 print(df_encoded)
+
+df3 = pd.DataFrame({
+    "date": pd.date_range("2025-01-01", periods=5, freq="D"),
+    "sales": [100, 150, 130, 180, 200]
+})
+
+df3["month"] = df3["date"].dt.month
+df3["dayofweek"] = df3["date"].dt.dayofweek
+print(df3)
