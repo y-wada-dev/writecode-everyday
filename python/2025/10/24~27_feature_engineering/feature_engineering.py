@@ -1,4 +1,6 @@
 import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 df = pd.DataFrame({
     "sales": [100, 200, 150, 300],
@@ -29,3 +31,9 @@ df3 = pd.DataFrame({
 df3["month"] = df3["date"].dt.month
 df3["dayofweek"] = df3["date"].dt.dayofweek
 print(df3)
+
+# 相関行列のヒートマップを表示
+corr = df.corr()
+sns.heatmap(corr, annot=True, cmap="coolwarm")
+plt.title("Correlation Matrix")
+plt.show()

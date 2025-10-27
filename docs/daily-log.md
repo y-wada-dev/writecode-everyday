@@ -350,3 +350,5 @@
 | 2025-10-25 | カテゴリ変数を数値化 | python/2025/10/24~25_feature_engineering/feature_engineering.py | python |
 | 2025-10-26 | 日付から時間情報を抽出 | python/2025/10/24~25_feature_engineering/feature_engineering.py | python |
 | 2025-10-26 | 日付から時間情報を抽出 | python/2025/10/24~26_feature_engineering/feature_engineering.py | python |
+| 2025-10-27 | 相関行列のヒートマップを表示 | python/2025/10/24~26_feature_engineering/feature_engineering.py | python |
+| 2025-10-27 | 相関行列のヒートマップを表示 | python/2025/10/24~27_feature_engineering/feature_engineering.py | python |
