@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.ensemble import RandomForestRegressor
 
 df = pd.DataFrame({
     "sales": [100, 200, 150, 300, 250],
@@ -15,3 +16,15 @@ sns.heatmap(corr, annot=True, cmap="coolwarm", vmin=-1, vmax=1)
 plt.show()
 high_corr = corr[(corr.abs() > 0.8) & (corr.abs() < 1.0)]
 print("高相関ペア：\n", high_corr)
+
+X = df.drop(columns=["sales"])
+y = df["sales"]
+
+model = RandomForestRegressor(random_state=0)
+model.fit(X, y)
+
+importances = pd.Series(model.feature_importances_, index=X.columns)
+importances.sort_values(ascending=False).plot(kind="bar")
+
+plt.title("Feature Importances")
+plt.show()
