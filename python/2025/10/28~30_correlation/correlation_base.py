@@ -3,6 +3,7 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.feature_selection import SelectKBest, f_regression
 
 df = pd.DataFrame({
     "sales": [100, 200, 150, 300, 250],
@@ -28,3 +29,9 @@ importances.sort_values(ascending=False).plot(kind="bar")
 
 plt.title("Feature Importances")
 plt.show()
+
+selector = SelectKBest(score_func=f_regression, k=2)
+X_new = selector.fit_transform(X, y)
+
+selected_features = X.columns[selector.get_support()]
+print("selected feature:", list(selected_features))
