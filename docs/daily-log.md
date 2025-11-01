@@ -358,3 +358,4 @@
 | 2025-10-30 | selected features | python/2025/10/28~29_correlation/correlation_base.py | python |
 | 2025-10-30 | selected features | python/2025/10/28~30_correlation/correlation_base.py | python |
 | 2025-10-31 | 回帰モデルの評価 | python/2025/10/31_evaluating_regression_models/evaluating_regression_models.py | python |
+| 2025-11-01 | evaluating classification models | python/2025/11/01_evaluating_classification_models/evaluating_classification_models.py | python |
