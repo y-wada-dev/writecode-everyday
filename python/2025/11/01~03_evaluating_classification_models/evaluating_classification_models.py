@@ -8,7 +8,9 @@ from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, precision_score ,recall_score, f1_score, confusion_matrix
 
-# サンプルデータ
+
+
+# ========= 回帰: ベースライン/残差/CV/学習曲線 =========
 df = pd.DataFrame({
     "ad_spend": [10, 20, 30, 40, 50, 60],
     "customers": [100, 200, 300, 400, 500, 600],
@@ -18,10 +20,10 @@ df = pd.DataFrame({
 X = df[["ad_spend", "customers"]]
 y = df["sales"]
 
-X_tarin, X_test, y_train, y_test, = train_test_split(X, y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test, = train_test_split(X, y, test_size=0.3, random_state=42)
 
 model = LinearRegression()
-model.fit(X_tarin, y_train)
+model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 # 評価指標
@@ -32,12 +34,11 @@ print("RMSE:", np.sqrt(mean_squared_error(y_test, y_pred)))
 iris = load_iris(as_frame=True)
 X, y = iris.data, iris.target
 
-X_tarin, X_test, y_train, y_test = train_test_split(X, y,test_size=0.3, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.3, random_state=0)
 
 clf = RandomForestClassifier(random_state=0)
-clf.fit(X_tarin, y_train)
+clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
-
 
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Precision:", precision_score(y_test, y_pred, average="macro"))
