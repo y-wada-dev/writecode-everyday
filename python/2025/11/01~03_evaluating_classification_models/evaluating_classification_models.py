@@ -44,3 +44,13 @@ print("Precision:", precision_score(y_test, y_pred, average="macro"))
 print("Recall:", recall_score(y_test, y_pred, average="macro"))
 print("F1:", f1_score(y_test, y_pred, average="macro"))
 print("混同行列:\n", confusion_matrix(y_test, y_pred))
+
+import matplotlib.pyplot as plt
+
+plt.scatter(X_test, y_pred)
+plt.plot(y.min(), y.max(), color="r--")
+plt.xlabel("Actual")
+plt.ylabel("Predicted")
+plt.title("Prediced VS Actual")
+plt.grid(True, aplha=0.5) 
+plt.show()
