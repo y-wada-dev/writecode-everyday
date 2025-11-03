@@ -361,3 +361,4 @@
 | 2025-11-01 | evaluating classification models | python/2025/11/01_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-03 | 視覚的に評価 | python/2025/11/01_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-03 | 視覚的に評価 | python/2025/11/01~03_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-03 | 修正 | python/2025/11/01~03_evaluating_classification_models/evaluating_classification_models.py | python |
