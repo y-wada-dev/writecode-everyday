@@ -48,9 +48,9 @@ print("混同行列:\n", confusion_matrix(y_test, y_pred))
 import matplotlib.pyplot as plt
 
 plt.scatter(y_test, y_pred)
-plt.plot(y.min(), y.max(), color="r--")
+plt.plot([y.min(), y.max()], [y.min(), y.max()], "r--")
 plt.xlabel("Actual")
 plt.ylabel("Predicted")
 plt.title("Prediced VS Actual")
-plt.grid(True, aplha=0.5) 
+plt.grid(True, alpha=0.5) 
 plt.show()
