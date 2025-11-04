@@ -44,6 +44,16 @@ print("R²:", r2_score(y_test, y_base))
 print("MAE:", mean_absolute_error(y_test, y_base))
 print("RMSE:", np.sqrt(mean_squared_error(y_test, y_base)))
 
+# 残差プロット
+residuals = y_test - y_pred
+plt.figure(figsize=(5,3))
+plt.scatter(y_pred, residuals)
+plt.axhline(0, color="r", linestyle="--")
+plt.xlabel("Predicted Values")
+plt.ylabel("Residuals")
+plt.title("Residuals Plot")
+plt.grid(True, alpha=0.5)
+plt.show()
 
 # iris = load_iris(as_frame=True)
 # X, y = iris.data, iris.target

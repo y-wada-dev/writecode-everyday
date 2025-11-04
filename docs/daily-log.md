@@ -367,3 +367,5 @@
 | 2025-11-04 | git commit -m "タイポ修正" --date="November 2 23:59:59 2025 +0900" | python/2025/11/01~03_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-04 | ベースラインモデルの評価指標 | python/2025/11/01~03_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-04 | ベースラインモデルの評価指標 | python/2025/11/01~04_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-05 | 残差プロット | python/2025/11/01~04_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-05 | 残差プロット | python/2025/11/01~05_evaluating_classification_models/evaluating_classification_models.py | python |
