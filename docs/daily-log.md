@@ -369,3 +369,5 @@
 | 2025-11-04 | ベースラインモデルの評価指標 | python/2025/11/01~04_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-05 | 残差プロット | python/2025/11/01~04_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-05 | 残差プロット | python/2025/11/01~05_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-06 | 交差検証 | python/2025/11/01~05_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-06 | 交差検証 | python/2025/11/01~06_evaluating_classification_models/evaluating_classification_models.py | python |

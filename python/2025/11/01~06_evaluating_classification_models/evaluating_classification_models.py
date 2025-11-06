@@ -55,6 +55,15 @@ plt.title("Residuals Plot")
 plt.grid(True, alpha=0.5)
 plt.show()
 
+# 交差検証
+cv = RepeatedKFold(n_splits=5, n_repeats=3, random_state=RANDOM_SEED)
+r2_cv = cross_val_score(reg, X_reg, y_reg, scoring="r2", cv=cv)
+mae_cv = -cross_val_score(reg, X_reg, y_reg, scoring="neg_mean_absolute_error", cv=cv)
+print("\n=== Cross-Validation (5x3) ===")
+print(f"R²  mean={r2_cv.mean():.3f}  std={r2_cv.std():.3f}")
+print(f"MAE mean={mae_cv.mean():.3f}  std={mae_cv.std():.3f}")
+
+
 # iris = load_iris(as_frame=True)
 # X, y = iris.data, iris.target
 
