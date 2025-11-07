@@ -63,6 +63,23 @@ print("\n=== Cross-Validation (5x3) ===")
 print(f"R²  mean={r2_cv.mean():.3f}  std={r2_cv.std():.3f}")
 print(f"MAE mean={mae_cv.mean():.3f}  std={mae_cv.std():.3f}")
 
+# 学習曲線
+train_sizes, train_scores, test_scores = learning_curve(
+    reg, X_reg, y_reg, cv=cv, scoring="r2",
+    train_sizes=np.linspace(0.4, 1.0, 5), random_state=RANDOM_SEED
+) 
+
+plt.figure(figsize=(5,3))
+plt.plot(train_sizes, train_scores.mean(axis=1), marker="o", label="Train")
+plt.plot(train_sizes, test_scores.mean(axis=1), marker="o", label="cv")
+plt.xlabel("Training samples")
+plt.ylabel("R² Score")
+plt.title("Learning Curve")
+plt.legend()
+plt.grid(True, alpha=0.5)
+plt.show()
+
+
 
 # iris = load_iris(as_frame=True)
 # X, y = iris.data, iris.target
