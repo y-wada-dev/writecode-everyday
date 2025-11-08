@@ -79,22 +79,31 @@ plt.legend()
 plt.grid(True, alpha=0.5)
 plt.show()
 
+# 分類
+iris = load_iris(as_frame=True)
+X_cls, y_cls = iris.data, iris.target
 
+Xc_train, Xc_test, yc_train, yc_test = train_test_split(
+    X_cls, y_cls,test_size=0.3, random_state=RANDOM_SEED, stratify=y_cls
+)
 
-# iris = load_iris(as_frame=True)
-# X, y = iris.data, iris.target
+clf = RandomForestClassifier(random_state=RANDOM_SEED)
+clf.fit(Xc_train, yc_train)
+yc_pred = clf.predict(Xc_test)
 
-# X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.3, random_state=0)
+print("\n=== Classification (Iris) ===")
+print(classification_report(yc_test, yc_pred, digits=3))
 
-# clf = RandomForestClassifier(random_state=0)
-# clf.fit(X_train, y_train)
-# y_pred = clf.predict(X_test)
+cm = confusion_matrix(yc_test, yc_pred)
+plt.figure(figsize=(4, 3))
+sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
+            xticklabels=iris.target_names, yticklabels=iris.target_names)
+plt.xlabel("Predicted")
+plt.ylabel("Actual")
+plt.title("Confusion Matrix")
+plt.tight_layout()
+plt.show()
 
-# print("Accuracy:", accuracy_score(y_test, y_pred))
-# print("Precision:", precision_score(y_test, y_pred, average="macro"))
-# print("Recall:", recall_score(y_test, y_pred, average="macro"))
-# print("F1:", f1_score(y_test, y_pred, average="macro"))
-# print("混同行列:\n", confusion_matrix(y_test, y_pred))
 
 # import matplotlib.pyplot as plt
 

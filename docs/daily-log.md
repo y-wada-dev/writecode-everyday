@@ -373,3 +373,5 @@
 | 2025-11-06 | 交差検証 | python/2025/11/01~06_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-07 | 学習曲線 | python/2025/11/01~06_evaluating_classification_models/evaluating_classification_models.py | python |
 | 2025-11-07 | 学習曲線 | python/2025/11/01~07_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-08 | 分類、ヒートマップ | python/2025/11/01~07_evaluating_classification_models/evaluating_classification_models.py | python |
+| 2025-11-08 | 分類、ヒートマップ | python/2025/11/01~08_evaluating_classification_models/evaluating_classification_models.py | python |
