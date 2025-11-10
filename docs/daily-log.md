@@ -380,3 +380,5 @@
 | 2025-11-10 | choropleth animation | python/2025/11/10_choropleth_animation/choropleth_world_timeseries.html |  |
 | 2025-11-10 | choropleth animation | python/2025/11/10_choropleth_animation/choropleth_world_timeseries.py | python |
 | 2025-11-10 | choropleth animation | python/2025/11/10_choropleth_animation/country_temp_timeseries.csv |  |
+| 2025-11-11 | temp heatmap expand | python/2025/11/11_temp_heatmap_expand/choropleth_world_temp.py | python |
+| 2025-11-11 | temp heatmap expand | python/2025/11/11_temp_heatmap_expand/country_temp_sample.csv |  |
