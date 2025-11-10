@@ -1,0 +1,19 @@
+iso3,country,year_month,temp_c
+JPN,Japan,2025-01,5.2
+JPN,Japan,2025-02,6.1
+JPN,Japan,2025-03,9.8
+USA,United States,2025-01,2.3
+USA,United States,2025-02,3.4
+USA,United States,2025-03,6.0
+GBR,United Kingdom,2025-01,4.0
+GBR,United Kingdom,2025-02,4.8
+GBR,United Kingdom,2025-03,7.1
+FRA,France,2025-01,3.9
+FRA,France,2025-02,5.2
+FRA,France,2025-03,8.5
+DEU,Germany,2025-01,1.5
+DEU,Germany,2025-02,2.6
+DEU,Germany,2025-03,6.4
+BRA,Brazil,2025-01,25.1
+BRA,Brazil,2025-02,24.8
+BRA,Brazil,2025-03,24.2
