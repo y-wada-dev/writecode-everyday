@@ -63,7 +63,7 @@ fig = px.choropleth(
     color="value",
     color_continuous_scale="YlOrRd",
     range_color=[0, 36],
-    title="日本の都道府県ヒートマップ（欠損＝グレー）",
+    title="日本の都道府県ヒートマップ",
 )
 
 fig.update_geos(

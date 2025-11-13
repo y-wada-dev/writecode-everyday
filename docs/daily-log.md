@@ -394,3 +394,4 @@
 | 2025-11-13 | pref heatmap2 | python/2025/11/12~13_temp_japan/japan_prefectures.geojson |  |
 | 2025-11-13 | pref heatmap2 | python/2025/11/12~13_temp_japan/pref_plotly.py | python |
 | 2025-11-13 | pref heatmap2 | python/2025/11/12~13_temp_japan/pref_sample.csv |  |
+| 2025-11-13 | タイトル修正 | python/2025/11/12~13_temp_japan/pref_plotly.py | python |
