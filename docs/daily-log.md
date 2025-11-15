@@ -401,3 +401,4 @@
 | 2025-11-15 | 気温データ分析 | .gitignore |  |
 | 2025-11-15 | 気温データ分析 | python/2025/11/15_temp_data/japan_temp_by_year.csv |  |
 | 2025-11-15 | 気温データ分析 | python/2025/11/15_temp_data/japan_temp_by_year.py | python |
+| 2025-11-15 | 気温データ分析02 | python/2025/11/15_temp_data/japan_temp_by_year.py | python |
