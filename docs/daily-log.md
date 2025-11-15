@@ -398,3 +398,6 @@
 | 2025-11-14 | create temp data | python/2025/11/14_make_timeseries_data/japan_temp_by_year.csv |  |
 | 2025-11-14 | create temp data | python/2025/11/14_make_timeseries_data/make_timeseries_data.py | python |
 | 2025-11-14 | create temp data | python/2025/11/14_make_timeseries_data/pref_temp_base.csv |  |
+| 2025-11-15 | 気温データ分析 | .gitignore |  |
+| 2025-11-15 | 気温データ分析 | python/2025/11/15_temp_data/japan_temp_by_year.csv |  |
+| 2025-11-15 | 気温データ分析 | python/2025/11/15_temp_data/japan_temp_by_year.py | python |
