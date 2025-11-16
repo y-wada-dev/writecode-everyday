@@ -33,3 +33,12 @@ print("各年の最高気温記録:")
 print(max_each_year[["year", "pref_name", "temp_c"]])
 print("各年の最低気温記録:")
 print(min_each_year[["year", "pref_name", "temp_c"]])
+
+df_change = (
+    df[df["year"] == 2016].set_index("pref_code")["temp_c"] -
+    df[df["year"] == 2015].set_index("pref_code")["temp_c"]
+)
+
+df_change = df_change.sort_values(ascending=False)
+print("2015年から2016年の気温変化（都道府県別）:")
+print(df_change)
