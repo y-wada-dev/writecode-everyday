@@ -408,3 +408,7 @@
 | 2025-11-16 | 気温変化 | python/2025/11/15~16_temp_data/japan_temp_by_year.py | python |
 | 2025-11-17 | temp plot | python/2025/11/17_temp_plot/japan_temp_by_year_scaled.csv |  |
 | 2025-11-17 | temp plot | python/2025/11/17_temp_plot/temp_plot.py | python |
+| 2025-11-18 | pref temp plot | python/2025/11/17_temp_plot/japan_temp_by_year_scaled.csv |  |
+| 2025-11-18 | pref temp plot | python/2025/11/17_temp_plot/temp_plot.py | python |
+| 2025-11-18 | pref temp plot | python/2025/11/17~18_temp_plot/japan_temp_by_year_scaled.csv |  |
+| 2025-11-18 | pref temp plot | python/2025/11/17~18_temp_plot/temp_plot.py | python |

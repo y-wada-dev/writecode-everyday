@@ -19,3 +19,15 @@ plt.ylabel("平均気温 (°C)")
 plt.xticks(df_year["year"])
 plt.tight_layout()
 plt.show()
+
+pref = "東京都"
+df_pref = df[df["pref_name"] == pref]
+
+plt.figure(figsize=(8, 4))
+plt.plot(df_pref["year"], df_pref["temp_c"], marker="o")
+plt.title(f"{pref}の年別平均気温")
+plt.xlabel("年")
+plt.ylabel("平均気温 (°C)")
+plt.xticks(df_pref["year"])
+plt.tight_layout()
+plt.show()
