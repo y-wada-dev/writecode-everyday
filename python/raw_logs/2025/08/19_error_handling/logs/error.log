@@ -1,0 +1,66 @@
+2025-08-19 21:01:35,116 | ERROR | 0で割ろうとしたためエラーが発生しました
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 31, in divide
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
+2025-08-19 21:01:35,119 | ERROR | 'abc'は整数に変換できませんでした
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 41, in parse_int
+    return int(text)
+           ^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'abc'
+2025-08-19 21:01:35,119 | ERROR | ファイルが見つかりません: no_such_file.txt
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 48, in read_text
+    with path.open(encoding="utf-8") as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/pathlib.py", line 1014, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'no_such_file.txt'
+2025-08-19 21:01:35,120 | ERROR | `キーが存在しません: 'b' in {'a': 1}
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 59, in get_key
+    return d[key]
+           ~^^^^^
+KeyError: 'b'
+2025-08-19 21:01:35,120 | ERROR | 範囲外アクセス: idx=5, len=2
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 66, in get_index
+    return seq[idx]
+           ~~~^^^^^
+IndexError: list index out of range
+2025-08-19 21:01:35,120 | ERROR | JSONの解析に失敗しました
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 73, in parse_json
+    return json.loads(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2025-08-19 21:01:35,121 | ERROR | JSONの解析に失敗しました
+Traceback (most recent call last):
+  File "/Users/yw/Documents/010_dev/010_private/080_programing/write_code_everyday/python/20250819_error_handling/error_handling.py", line 73, in parse_json
+    return json.loads(text)
+           ^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yw/.pyenv/versions/3.12.0/lib/python3.12/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 8 (char 7)
+2025-08-19 21:01:35,121 | INFO | ファイルに書き込みました: tmp.txt
+2025-08-19 21:01:35,121 | ERROR | 価格の値が負です: price=-120.0
+NoneType: None
