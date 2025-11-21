@@ -14,24 +14,31 @@
 - 毎日コードを書きコミットする
 - 小さなコードでもOK。ただしできる限り有益なコードを目指すこと
 - GitHubで管理すること
+- このリポジトリ以外でもOK
+- やったことは`docs/daily-log.md`に残す
 
 ### 2. フォルダ構成
 - ルート直下は **テーマ別（言語・技術）ディレクトリ**
-- サブディレクトリは `YYYYMMDD_slug` 形式（スラッグは簡潔に）
+- サブディレクトリは `theme/YYYYMMDD_slug` 形式（スラッグは簡潔に）
 
 例：
 ```markdown
 write_code_everyday/
-├── Python/
-│ ├── 20250808_fizzbuzz/
-│ │ └── main.py
-│ ├── 20250809_datetime_practice/
-│ │ └── main.py
-├── JavaScript/
-│ └── 20250809_dom_practice/
-│ └── index.js
+├── career.md
 ├── docs/
-│ └── daily-log.md
+│   └── daily-log.md
+├── python/
+│   ├── library/                       # テーマ別に整理したコード
+│   │   ├── algorithms_data_structures/
+│   │   ├── api_http/
+│   │   ├── basic_python/
+│   │   ├── csv_json_handling/
+│   │   ├── data_engineering/
+│   │   ├── data_science_ml/
+│   │   ├── visualization_geospatial/
+│   │   └── visualization_matplotlib/
+│   ├── raw_logs/                      # (旧)日別の“生コード”置き場
+│   └── first_commit.py
 └── README.md
 ```
 
@@ -43,28 +50,26 @@ write_code_everyday/
 
 ### 4. Daily Log
 - `docs/daily-log.md` に日ごとの記録を表形式で保存
-- commit-msg フックで自動追記
 
 例：
 ```markdown
+--
+## YYYY/MM/DD
+
+### What I Did
+-
+
+### Learnings
+-
+
+### Next Action
+-
+# Archive: Auto-Generated File Logs（旧ログ保管庫）
 | Date       | What                | Path                                      | Tags         |
 |------------|---------------------|-------------------------------------------|--------------|
 | 2025-08-08 | PythonでFizzBuzz実装 | Python/20250808_fizzbuzz/main.py          | python, kata |
 | 2025-08-09 | 日付処理の練習        | Python/20250809_datetime_practice/main.py | datetime     |
 ```
-
-### 5. commit-msg フック
-コミット時に自動で日付を付与し、Daily Logに記録します
-
-コマンド例：
-`
-git commit -m "PythonでFizzBuzz"
-`
-
-実際のコミットメッセージ：
-`
-20250808_PythonでFizzBuzz
-`
 
 ## この取り組みのポイント
 - 毎日の積み重ねでコード力を向上
