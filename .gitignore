@@ -26,6 +26,4 @@ node_modules/
 dist/
 build/
 
-career.md
-
 .local/*
