@@ -43,10 +43,12 @@ write_code_everyday/
 ```
 
 ### 3. コミットメッセージ形式
-- `YYYYMMDD_やったこと`
-- 例：
-20250808_PythonでFizzBuzz実装
-20250809_日付処理の練習
+feat:     新機能
+fix:      バグ修正
+docs:     ドキュメント
+chore:    雑務・設定
+leetcode: LeetCode（自分ルール）
+30days-py:   30-Days-Of-Python（自分ルール）
 
 ### 4. Daily Log
 - `docs/daily-log.md` に日ごとの記録を表形式で保存
